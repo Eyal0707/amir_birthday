@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/home/Home';
+import Car from './pages/car/Car';
+import Road from './pages/road/Road';
+import Movie from './pages/movie/Movie';
+import Error from './pages/error/Error';
 
 function App() {
+  const [isInteracted, setIsInteracted] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {
+        isInteracted
+          ? <>
+            <BrowserRouter>
+              <Routes>
+                <Route index element={<Home />} />
+                <Route path="/car" element={<Car />} />
+                <Route path="/road" element={<Road />} />
+                <Route path="/movie" element={<Movie />} />
+                <Route path="*" element={<Error />} />
+              </Routes>
+            </BrowserRouter>
+          </>
+          : <div className="barrier" onClick={() => setIsInteracted(true)}>
+            <h1>פתח רק אם אתה אמיר מוכ אהבל</h1>
+            <p>לחץ בכל מקום כדי להתחיל</p>
+            <p>(sound on)</p>
+          </div>
+      }
+    </>
   );
 }
 

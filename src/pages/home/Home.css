@@ -1,0 +1,152 @@
+@keyframes head_wiggle {
+    0% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+
+        transform: rotateZ(-90deg);
+    }
+
+    100% {
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes fly_motion {
+    0% {
+        left: 10%;
+        top: 10%;
+        transform: rotateZ(90deg);
+    }
+
+    10% {
+        left: 75%;
+        top: 85%;
+        transform: rotateZ(-90deg);
+    }
+
+
+    20% {
+        left: 80%;
+        top: 90%;
+        transform: rotateZ(180deg);
+    }
+
+    30% {
+        left: 30%;
+        top: 25%;
+        transform: rotateZ(50deg);
+    }
+
+    40% {
+        left: 80%;
+        top: 15%;
+        transform: rotateZ(20deg);
+    }
+
+    50% {
+        left: 40%;
+        top: 25%;
+        transform: rotateZ(-70deg);
+    }
+
+    60% {
+        left: 80%;
+        top: 15%;
+        transform: rotateZ(180deg);
+    }
+
+    70% {
+        left: 10%;
+        top: 85%;
+        transform: rotateZ(180deg);
+    }
+
+
+    80% {
+        left: 10%;
+        top: 45%;
+        transform: rotateZ(10deg);
+    }
+
+    90% {
+        left: 70%;
+        top: 35%;
+        transform: rotateZ(40deg);
+    }
+
+    100% {
+        left: 10%;
+        top: 10%;
+        transform: rotateZ(90deg);
+    }
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+        justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/assets/pictures/billiard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.home .face {
+    height: 50%;
+    max-width: 40%;
+    animation: head_wiggle 8s infinite ease-in-out;
+}
+
+.home .fly {
+    position: absolute;
+    width: 5%;
+    animation: fly_motion 20s infinite ease-in-out;
+}
+
+.home .riddle{
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    direction: rtl;
+}
+
+.home .riddle .question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home .riddle .question p {
+    margin: 10px;
+}
+
+.home .riddle .question h2 {
+    text-decoration: underline;
+}
+
+.home .riddle .answer{
+    width: 80%;
+    height: 10%;
+    font-size: 3em;
+    direction: ltr;
+
+}
+
+
+
+
+
