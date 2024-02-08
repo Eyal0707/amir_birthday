@@ -1,6 +1,5 @@
-import React from 'react'
-import "./Home.css"
-import useRiddle from '../../hooks/useRiddle'
+import useRiddle from '../../hooks/useRiddle';
+import "./Home.css";
 
 const Home = () => {
     const [answer, onAnswerChange] = useRiddle("it takes two", "/car");
@@ -10,8 +9,8 @@ const Home = () => {
             <audio id='music' autoPlay loop>
                 <source src='./assets/music/aug_22.mp3' type='audio/mpeg' />
             </audio>
-            <img src="./assets/pictures/fly.png" className='fly' />
-            <img src='./assets/pictures/eyal_face.png' className='face' />
+            <img src="./assets/pictures/fly.png" className='fly' alt='bzzz bzzz ani zvuv'/>
+            <img src='./assets/pictures/eyal_face.png' className='face' alt='eyal is ugly' />
             <div className="riddle">
                 <div className="explanation">
                     <h1>ברוכים הבאים</h1>
@@ -25,9 +24,9 @@ const Home = () => {
                 </div>
                 <input className="answer" value={answer} onChange={onAnswerChange} />
             </div>
-            <img src='./assets/pictures/amir_face.png' className='face' />
+            <img src='./assets/pictures/amir_face.png' className='face' alt='amir face'/>
         </div>
     )
 }
 
-export default Home
+export default Home;

@@ -6,6 +6,7 @@ import Car from './pages/car/Car';
 import Road from './pages/road/Road';
 import Movie from './pages/movie/Movie';
 import Error from './pages/error/Error';
+import Laboratory from './pages/laboratory/Laboratory';
 
 function App() {
   const [isInteracted, setIsInteracted] = useState(false);
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/car" element={<Car />} />
                 <Route path="/road" element={<Road />} />
                 <Route path="/movie" element={<Movie />} />
+                <Route path="/laboratory" element={<Laboratory />} />
                 <Route path="*" element={<Error />} />
               </Routes>
             </BrowserRouter>

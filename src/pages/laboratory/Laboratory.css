@@ -1,0 +1,28 @@
+.laboratory {
+    background-image: url(../../../public/assets/pictures/laboratory.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.laboratory .game-explain {
+    font-family: 'Courier New', Courier, monospace;
+    width: 25%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    direction: rtl;
+}
+
+.brewingTable {
+    display: flex;
+    direction: row;
+}

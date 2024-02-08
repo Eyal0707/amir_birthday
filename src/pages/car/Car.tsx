@@ -21,8 +21,8 @@ const Car = () => {
           </div>
           <input className='answer' value={answer} onChange={onAnswerChange} />
         </div>
-        <img className='car_image' src="./assets/pictures/car.png" />
-        <img className='car-face' src="./assets/pictures/eyal_car_face.png" />
+        <img className='car_image' src="./assets/pictures/car.png" alt='אוטו עושה וורום וורם'/>
+        <img className='car-face' src="./assets/pictures/eyal_car_face.png" alt='שלום אני אייל ואני באוטו שעושה וורוום ווררום '/>
       </div>
     </div>
   )

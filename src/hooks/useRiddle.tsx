@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const englishLetterRegex = /^[a-zA-Z ]*$/;
 
-const useRiddle = (correctAnswer: string, nextPagePath: string): [string, (e: React.ChangeEvent<HTMLInputElement>) => void] => {
+const useRiddle = (
+  correctAnswer: string,
+  nextPagePath: string
+): [string, (e: React.ChangeEvent<HTMLInputElement>) => void] => {
   const navigate = useNavigate();
   const [answer, setAnswer] = useState("");
 
@@ -16,15 +18,12 @@ const useRiddle = (correctAnswer: string, nextPagePath: string): [string, (e: Re
       if (lowercasedValue === correctAnswer) {
         setTimeout(() => {
           navigate(nextPagePath);
-        }, 500)
+        }, 500);
       }
     }
   }
 
-  return [
-    answer,
-    onAnswerChange
-  ]
-}
+  return [answer, onAnswerChange];
+};
 
-export default useRiddle
+export default useRiddle;
