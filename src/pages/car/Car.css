@@ -1,0 +1,103 @@
+@keyframes nod {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slow-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.car {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/assets/pictures/street.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car .main {
+    width: 80%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    object-fit: contain;
+}
+
+.car .main .car_image {
+    width: 100%;
+    animation: vibrate 0.2s infinite;
+}
+
+
+.car .main .car-face {
+    position: absolute;
+    height: 25%;
+    top: 30%;
+    left: 45%;
+    animation: nod infinite 3s ease-in-out;
+}
+
+.car .main .riddle {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 30%;
+    height: 50%;
+    right: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    direction: rtl;
+    z-index: 1;
+    animation: slow-fade-in 20s;
+}
+
+.car .main .riddle h2{
+    text-decoration: underline;
+}
+
+.car .main .riddle .answer {
+    width: 80%;
+    height: 10%;
+    font-size: 2.5em;
+    direction: ltr;
+}
