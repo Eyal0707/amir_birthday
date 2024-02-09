@@ -33,7 +33,9 @@ const Laboratory = () => {
         setShowRetryMessage(true);
       }, 1800);
     } else {
-      // navigate("/movie");
+      if (isWin) {
+        navigate("/movie");
+      }
     }
   }, [isWin]);
 
