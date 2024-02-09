@@ -4,7 +4,7 @@ import Potion from "../../components/Poition.tsx/Potion";
 import "./Laboratory.css";
 
 const Laboratory = () => {
-  const [gameStartCountdown, setGameStartCountdown] = useState(15);
+  const [gameStartCountdown, setGameStartCountdown] = useState(25);
   // const [gameStartCountdown, setGameStartCountdown] = useState(1);
   const [selectedPotions, setSelectedPotions] = useState<string[]>([]);
   const [isGameOn, setIsGameOn] = useState(false);
@@ -33,7 +33,7 @@ const Laboratory = () => {
         setShowRetryMessage(true);
       }, 1800);
     } else {
-      // navigate("/car");
+      // navigate("/movie");
     }
   }, [isWin]);
 

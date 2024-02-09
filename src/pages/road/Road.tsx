@@ -45,8 +45,8 @@ const Road = () => {
     if (targetCount > 20) {
       setIsWin(true);
       setTimeout(() => {
-        navigate("/movie");
-      }, 2000);
+        navigate("/laboratory");
+      }, 5000);
     } else {
       setCurrentTimeOut(setTimeout(() => targetTimeOut(targetCount + 1), 3000));
     }
@@ -71,7 +71,8 @@ const Road = () => {
             <>
               {isWin ? (
                 <div className="game-explain">
-                  <h1>יששששששששש!!!!!!!!!!</h1>
+                  <h1>יששששששששש!!!!!</h1>
+                  <p>רגע יופה מתקשר</p>
                 </div>
               ) : (
                 <img
