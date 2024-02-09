@@ -1,13 +1,10 @@
-import React from 'react'
-import "./Car.css";
 import useRiddle from '../../hooks/useRiddle';
+import "./Car.css";
 
 const Car = () => {
   const [answer, onAnswerChange] = useRiddle("raptor", "/road")
   return (
     <div className='car'>
-
-
       <audio id='music' autoPlay loop>
         <source src='./assets/music/shake_it_off.mp3' type='audio/mpeg' />
       </audio>
@@ -28,4 +25,4 @@ const Car = () => {
   )
 }
 
-export default Car
+export default Car;

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/home/Home';
 import Car from './pages/car/Car';
-import Road from './pages/road/Road';
-import Movie from './pages/movie/Movie';
 import Error from './pages/error/Error';
+import Home from './pages/home/Home';
 import Laboratory from './pages/laboratory/Laboratory';
+import Movie from './pages/movie/Movie';
+import Road from './pages/road/Road';
 
 function App() {
   const [isInteracted, setIsInteracted] = useState(false);

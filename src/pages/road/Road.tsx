@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import "./Road.css";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Road.css";
 
 const Road = () => {
   const [isGameOn, setIsGameOn] = useState(false);
