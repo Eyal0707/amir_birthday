@@ -34,7 +34,9 @@ const Laboratory = () => {
       }, 1800);
     } else {
       if (isWin) {
-        navigate("/movie");
+        setTimeout(() => {
+          navigate("/movie");
+        }, 4000)
       }
     }
   }, [isWin]);

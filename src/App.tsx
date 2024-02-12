@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
+import "./Animations.css"
 import Car from './pages/car/Car';
 import Error from './pages/error/Error';
 import Home from './pages/home/Home';
 import Laboratory from './pages/laboratory/Laboratory';
 import Movie from './pages/movie/Movie';
 import Road from './pages/road/Road';
+import Nafis from './pages/nafis/Nafis';
 
 function App() {
   const [isInteracted, setIsInteracted] = useState(false);
@@ -22,6 +24,7 @@ function App() {
                 <Route path="/road" element={<Road />} />
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/laboratory" element={<Laboratory />} />
+                <Route path="/nafis" element={<Nafis />} />
                 <Route path="*" element={<Error />} />
               </Routes>
             </BrowserRouter>

@@ -1,0 +1,164 @@
+@keyframes drinkPotion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    65% {
+        transform: rotate(-60deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    65% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(6deg);
+    }
+
+    95% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes head_wiggle {
+    0% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+
+        transform: rotateZ(-90deg);
+    }
+
+    100% {
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes fly_motion {
+    0% {
+        left: 10%;
+        top: 10%;
+        transform: rotateZ(90deg);
+    }
+
+    10% {
+        left: 75%;
+        top: 85%;
+        transform: rotateZ(-90deg);
+    }
+
+
+    20% {
+        left: 80%;
+        top: 90%;
+        transform: rotateZ(180deg);
+    }
+
+    30% {
+        left: 30%;
+        top: 25%;
+        transform: rotateZ(50deg);
+    }
+
+    40% {
+        left: 80%;
+        top: 15%;
+        transform: rotateZ(20deg);
+    }
+
+    50% {
+        left: 40%;
+        top: 25%;
+        transform: rotateZ(-70deg);
+    }
+
+    60% {
+        left: 80%;
+        top: 15%;
+        transform: rotateZ(180deg);
+    }
+
+    70% {
+        left: 10%;
+        top: 85%;
+        transform: rotateZ(180deg);
+    }
+
+
+    80% {
+        left: 10%;
+        top: 45%;
+        transform: rotateZ(10deg);
+    }
+
+    90% {
+        left: 70%;
+        top: 35%;
+        transform: rotateZ(40deg);
+    }
+
+    100% {
+        left: 10%;
+        top: 10%;
+        transform: rotateZ(90deg);
+    }
+}
+
+@keyframes nod {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slow-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

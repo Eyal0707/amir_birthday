@@ -1,0 +1,72 @@
+.nafis{
+    background-image:  url("../../../public/assets/pictures/nafis.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nafis .faces{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nafis .faces img{
+    height: 100%;
+    animation: nod 0.3s infinite;
+}
+
+.nafis .faces .amir {   
+    animation-delay: 0.15s;
+}
+
+
+.nafis .riddle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    direction: rtl;
+    animation: slow-fade-in 6s;
+}
+
+.nafis .riddle .question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nafis .riddle .question p {
+    margin: 10px;
+}
+
+.nafis .riddle .question h1 {
+    text-decoration: underline;
+}
+
+.nafis .riddle input {
+    width: 80%;
+    height: 10%;
+    font-size: 2em;
+    direction: ltr;
+
+}
+

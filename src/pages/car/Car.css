@@ -1,46 +1,3 @@
-@keyframes nod {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes vibrate {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(1px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
-@keyframes slow-fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .car {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/assets/pictures/street.png");
     background-size: cover;
@@ -98,6 +55,6 @@
 .car .main .riddle .answer {
     width: 80%;
     height: 10%;
-    font-size: 2.5em;
+    font-size: 2em;
     direction: ltr;
 }
