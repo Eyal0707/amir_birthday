@@ -188,7 +188,9 @@ const Laboratory = () => {
         </div>
       ) : (
         <div className="game-explain">
-          <h1> האמיר שאני מכיר מבין בשיקויים וכימיה וכזה...</h1>
+          <h1>רינג! רינג! רינג!</h1>
+          <p>- - - - - - - - - - - - - - - - - - - - -</p>
+          <h2> האמיר שאני מכיר מבין בשיקויים וכימיה וכזה...</h2>
           <img
             src="./assets/pictures/yoffe-face.png"
             className="yoffe-face"
@@ -211,5 +213,3 @@ const Laboratory = () => {
 };
 
 export default Laboratory;
-
-// - Eyal add routing in and out of this page please
