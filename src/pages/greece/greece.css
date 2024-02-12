@@ -1,0 +1,29 @@
+.greece {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/assets/pictures/birthday.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.greece .card {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 40%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    direction: rtl;
+    animation: slow-fade-in 6s;
+    padding: 10px;
+}
+
